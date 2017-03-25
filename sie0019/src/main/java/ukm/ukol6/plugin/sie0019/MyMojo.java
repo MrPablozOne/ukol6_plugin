@@ -41,7 +41,7 @@ public class MyMojo
     @Parameter( defaultValue = "${project.build.directory}", property = "outputDir", required = true )
     private File outputDirectory;
     
-    @Parameter( defaultValue = "${}", property = "countOfFiles", required = true )
+    @Parameter( defaultValue = "0", property = "countOfFiles", required = true )
     private int countOfFiles;
 
     public void execute()
